@@ -1,0 +1,34 @@
+Algorithme DéplacerElements
+    // Étape 1 : Demander la taille du tableau N
+    Afficher "Entrez la taille du tableau N :"
+    Lire N
+
+    Déclarer tableau[N] : Entier
+
+    Pour i de 0 à N-1 Faire
+        Afficher "Entrez la valeur de l'élément ", i+1, " :"
+        Lire tableau[i]
+    Fin Pour
+
+    Afficher "Entrez l'entier M :"
+    Lire M
+
+    // Étape 5 : Déplacer les M premiers éléments vers la fin du tableau
+    Pour i de 0 à M-1 Faire
+        // Stocker temporairement le premier élément
+        temp = tableau[0]
+
+        // Décaler tous les éléments vers la gauche
+        Pour j de 0 à N-2 Faire
+            tableau[j] = tableau[j+1]
+        Fin Pour
+
+        // Placer l'élément stocké à la fin du tableau
+        tableau[N-1] = temp
+    Fin Pour
+
+    Afficher "Tableau après déplacement des ", M, " premiers éléments :"
+    Pour i de 0 à N-1 Faire
+        Afficher tableau[i]
+    Fin Pour
+Fin Algorithme
