@@ -45,5 +45,4 @@ temp = t[0]
    fin pour 
 t[n-1] = temp 
 fin pour 
-
-1 2 3 4 5 6 7 8  as snake
+wtff fuck are u doing here ??
